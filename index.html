@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gram Helpline – Digital Gram Panchayat Complaint System</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAVBAR
+══════════════════════════════════════ -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+
+    <a href="#home" class="logo">
+      <div class="logo-icon">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/60px-Emblem_of_India.svg.png" alt="Emblem of India" />
+      </div>
+      <div class="logo-text">
+        <span class="logo-main">Gram Helpline</span>
+        <span class="logo-sub">ग्राम हेल्पलाइन</span>
+      </div>
+    </a>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </label>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#register-village">Register Village</a>
+      <a href="#complaint">Raise Complaint</a>
+      <a href="#track">Track Complaint</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact Support</a>
+    </nav>
+
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+      <i class="fas fa-moon" id="themeIcon"></i>
+      <span id="themeLabel">Dark</span>
+    </button>
+
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <img
+    src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80"
+    alt="Indian village panorama"
+    class="hero-bg-img"
+  />
+  <div class="hero-content">
+    <div class="hero-badge">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Emblem_of_India.svg/28px-Emblem_of_India.svg.png" alt="India Emblem" />
+      <span>भारत सरकार पहल &nbsp;|&nbsp; Government of India Initiative</span>
+    </div>
+    <h1 class="hero-title">Digital Gram Panchayat<br/><span class="highlight">Complaint System</span></h1>
+    <p class="hero-sub">Report village issues easily and track their resolution — anytime, anywhere.</p>
+    <p class="hero-sub-hi">गाँव की समस्याओं को आसानी से दर्ज करें और समाधान ट्रैक करें</p>
+    <div class="hero-actions">
+      <a href="#register-village" class="btn btn-primary"><i class="fas fa-map-marked-alt"></i> Register Your Village</a>
+      <a href="#complaint" class="btn btn-outline-white"><i class="fas fa-file-alt"></i> Raise a Complaint</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><strong>12,000+</strong><span>Villages Registered</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><strong>85,000+</strong><span>Complaints Resolved</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><strong>28</strong><span>States Covered</span></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     FEATURES / COMPLAINT CATEGORIES
+══════════════════════════════════════ -->
+<section class="features" id="features">
+  <div class="section-header">
+    <span class="section-tag">शिकायत श्रेणियां</span>
+    <h2>Register Complaint</h2>
+    <p>Select your issue category and get it resolved by the right authority</p>
+  </div>
+
+  <div class="features-grid">
+
+    <div class="feature-card">
+      <div class="feature-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?w=600&q=80"
+          alt="Hand pump water supply in Indian village"
+          class="feature-img"
+        />
+        <div class="feature-img-overlay">
+          <span class="cat-badge water-badge"><i class="fas fa-tint"></i> Water Supply</span>
+        </div>
+      </div>
+      <div class="feature-body">
+        <h3><i class="fas fa-tint water-icon"></i> Water Supply Problems</h3>
+        <p>Report issues with drinking water, pipeline leaks, hand pumps, or irregular water supply in your village.</p>
+        <a href="#complaint" class="feature-link">Report Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80"
+          alt="Electricity power lines in rural India"
+          class="feature-img"
+        />
+        <div class="feature-img-overlay">
+          <span class="cat-badge elec-badge"><i class="fas fa-bolt"></i> Electricity</span>
+        </div>
+      </div>
+      <div class="feature-body">
+        <h3><i class="fas fa-bolt elec-icon"></i> Electricity Problems</h3>
+        <p>Register complaints about power cuts, broken poles, faulty meters, or lack of electricity connection.</p>
+        <a href="#complaint" class="feature-link">Report Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1515162305285-0293e4767cc2?w=600&q=80"
+          alt="Damaged rural road in India"
+          class="feature-img"
+        />
+        <div class="feature-img-overlay">
+          <span class="cat-badge road-badge"><i class="fas fa-road"></i> Road &amp; Infra</span>
+        </div>
+      </div>
+      <div class="feature-body">
+        <h3><i class="fas fa-road road-icon"></i> Road &amp; Infrastructure</h3>
+        <p>Report damaged roads, broken bridges, lack of drainage, or poor construction work in your area.</p>
+        <a href="#complaint" class="feature-link">Report Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=600&q=80"
+          alt="Indian farmer in field"
+          class="feature-img"
+        />
+        <div class="feature-img-overlay">
+          <span class="cat-badge farm-badge"><i class="fas fa-seedling"></i> Farming</span>
+        </div>
+      </div>
+      <div class="feature-body">
+        <h3><i class="fas fa-seedling farm-icon"></i> Farming Support</h3>
+        <p>Seek help for irrigation issues, crop insurance, fertilizer supply, or government scheme assistance.</p>
+        <a href="#complaint" class="feature-link">Report Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?w=600&q=80"
+          alt="Rural government hospital"
+          class="feature-img"
+        />
+        <div class="feature-img-overlay">
+          <span class="cat-badge services-badge"><i class="fas fa-hospital"></i> Public Services</span>
+        </div>
+      </div>
+      <div class="feature-body">
+        <h3><i class="fas fa-hospital services-icon"></i> Public Services</h3>
+        <p>Raise concerns about hospitals, schools, colleges, ration shops, anganwadi centres, and more.</p>
+        <a href="#complaint" class="feature-link">Report Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <div class="feature-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=600&q=80"
+          alt="Government office public servant"
+          class="feature-img"
+        />
+        <div class="feature-img-overlay">
+          <span class="cat-badge servant-badge"><i class="fas fa-user-tie"></i> Public Servant</span>
+        </div>
+      </div>
+      <div class="feature-body">
+        <h3><i class="fas fa-user-tie servant-icon"></i> Public Servant Complaint</h3>
+        <p>File complaints against negligent or corrupt public servants in a safe and transparent manner.</p>
+        <a href="#complaint" class="feature-link">Report Now <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     VILLAGE REGISTRATION FORM
+══════════════════════════════════════ -->
+<section class="form-section register-section" id="register-village">
+  <div class="form-wrapper">
+    <div class="form-header">
+      <div class="form-icon reg-icon"><i class="fas fa-map-marked-alt"></i></div>
+      <h2>Village Registration</h2>
+      <p>Register your village to get a unique Village ID and start managing complaints</p>
+    </div>
+    <form class="gram-form" action="#" method="post">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="village-name"><i class="fas fa-home"></i> Village Name *</label>
+          <input type="text" id="village-name" name="village_name" placeholder="Enter village name" required />
+        </div>
+        <div class="form-group">
+          <label for="panchayat-name"><i class="fas fa-landmark"></i> Panchayat Name *</label>
+          <input type="text" id="panchayat-name" name="panchayat_name" placeholder="Enter panchayat name" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="district"><i class="fas fa-map"></i> District *</label>
+          <input type="text" id="district" name="district" placeholder="Enter district name" required />
+        </div>
+        <div class="form-group">
+          <label for="state"><i class="fas fa-flag"></i> State *</label>
+          <select id="state" name="state" required>
+            <option value="">-- Select State --</option>
+            <option>Andhra Pradesh</option><option>Arunachal Pradesh</option>
+            <option>Assam</option><option>Bihar</option><option>Chhattisgarh</option>
+            <option>Goa</option><option>Gujarat</option><option>Haryana</option>
+            <option>Himachal Pradesh</option><option>Jharkhand</option>
+            <option>Karnataka</option><option>Kerala</option>
+            <option>Madhya Pradesh</option><option>Maharashtra</option>
+            <option>Manipur</option><option>Meghalaya</option><option>Mizoram</option>
+            <option>Nagaland</option><option>Odisha</option><option>Punjab</option>
+            <option>Rajasthan</option><option>Sikkim</option><option>Tamil Nadu</option>
+            <option>Telangana</option><option>Tripura</option>
+            <option>Uttar Pradesh</option><option>Uttarakhand</option>
+            <option>West Bengal</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="admin-name"><i class="fas fa-user"></i> Admin / Sarpanch Name *</label>
+          <input type="text" id="admin-name" name="admin_name" placeholder="Full name of Sarpanch / Admin" required />
+        </div>
+        <div class="form-group">
+          <label for="contact"><i class="fas fa-phone"></i> Contact Number *</label>
+          <input type="tel" id="contact" name="contact" placeholder="+91 XXXXX XXXXX" maxlength="13" required />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">
+        <i class="fas fa-paper-plane"></i> Register Village
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     COMPLAINT FORM
+══════════════════════════════════════ -->
+<section class="form-section complaint-section" id="complaint">
+  <div class="form-wrapper">
+    <div class="form-header">
+      <div class="form-icon comp-icon"><i class="fas fa-exclamation-circle"></i></div>
+      <h2>Raise a Complaint</h2>
+      <p>Submit your issue with details so the authorities can act quickly</p>
+    </div>
+    <form class="gram-form" action="#" method="post" enctype="multipart/form-data">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="select-village"><i class="fas fa-map-marker-alt"></i> Select Village *</label>
+          <select id="select-village" name="select_village" required>
+            <option value="">-- Select Your Village --</option>
+            <option>Rampur</option><option>Shivpur</option>
+            <option>Chandpur</option><option>Anandpur</option><option>Krishnapur</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="complaint-type"><i class="fas fa-tags"></i> Complaint Type *</label>
+          <select id="complaint-type" name="complaint_type" required>
+            <option value="">-- Select Category --</option>
+            <option value="water">💧 Water Supply</option>
+            <option value="electricity">⚡ Electricity</option>
+            <option value="road">🛣️ Road &amp; Infrastructure</option>
+            <option value="farming">🌾 Farming Support</option>
+            <option value="public_services">🏥 Public Services</option>
+            <option value="servant">👔 Public Servant</option>
+            <option value="other">📋 Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group full-width">
+        <label for="description"><i class="fas fa-align-left"></i> Description *</label>
+        <textarea id="description" name="description" rows="5"
+          placeholder="Describe your complaint in detail. Include location, time, and any relevant information..." required></textarea>
+      </div>
+      <div class="form-group full-width">
+        <label><i class="fas fa-image"></i> Upload Image (Optional)</label>
+        <div class="upload-area">
+          <i class="fas fa-cloud-upload-alt upload-icon"></i>
+          <p>Drag &amp; drop your image here, or <span class="upload-browse">browse files</span></p>
+          <p class="upload-hint">Supports JPG, PNG, PDF up to 5MB</p>
+          <input type="file" class="file-input" accept="image/*,.pdf" />
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">
+        <i class="fas fa-paper-plane"></i> Submit Complaint
+      </button>
+    </form>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     TRACK COMPLAINT
+══════════════════════════════════════ -->
+<section class="track-section" id="track">
+  <div class="section-header">
+    <span class="section-tag">Complaint Tracking</span>
+    <h2>Track Your Complaint</h2>
+    <p>Enter your Complaint ID to check the current status of your issue</p>
+  </div>
+  <div class="track-container">
+    <div class="track-form-card">
+      <form class="track-form" action="#" method="get">
+        <div class="track-input-group">
+          <i class="fas fa-search track-search-icon"></i>
+          <input type="text" name="complaint_id" placeholder="Enter Complaint ID  e.g. GH-2024-00123" />
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <i class="fas fa-satellite-dish"></i> Track Status
+        </button>
+      </form>
+
+      <div class="status-box">
+        <div class="status-header">
+          <span class="complaint-id-label">Complaint ID: <strong>GH-2024-00123</strong></span>
+          <span class="status-badge inprogress">In Progress</span>
+        </div>
+        <div class="status-timeline">
+          <div class="timeline-step done">
+            <div class="step-dot"><i class="fas fa-check"></i></div>
+            <div class="step-content">
+              <strong>Complaint Registered</strong>
+              <span>12 Apr 2024, 10:30 AM</span>
+            </div>
+          </div>
+          <div class="timeline-step done">
+            <div class="step-dot"><i class="fas fa-check"></i></div>
+            <div class="step-content">
+              <strong>Assigned to Authority</strong>
+              <span>13 Apr 2024, 2:00 PM</span>
+            </div>
+          </div>
+          <div class="timeline-step active">
+            <div class="step-dot"><i class="fas fa-spinner fa-spin"></i></div>
+            <div class="step-content">
+              <strong>In Progress</strong>
+              <span>Under review by Water Department</span>
+            </div>
+          </div>
+          <div class="timeline-step">
+            <div class="step-dot"><i class="fas fa-flag-checkered"></i></div>
+            <div class="step-content">
+              <strong>Resolved</strong>
+              <span>Awaiting completion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="status-legend">
+        <div class="legend-item"><span class="status-badge pending">Pending</span><p>Complaint registered, awaiting assignment</p></div>
+        <div class="legend-item"><span class="status-badge inprogress">In Progress</span><p>Under review by department</p></div>
+        <div class="legend-item"><span class="status-badge resolved">Resolved</span><p>Issue addressed and closed</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     ABOUT
+══════════════════════════════════════ -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-img-col">
+      <img
+        src="https://images.unsplash.com/photo-1590274853856-f22d5ee3d228?w=700&q=80"
+        alt="Gram Panchayat meeting in an Indian village"
+        class="about-img"
+      />
+      <div class="about-img-badge">
+        <i class="fas fa-check-circle"></i>
+        <div>
+          <strong>Trusted Platform</strong>
+          <small>Ministry of Panchayati Raj</small>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <span class="section-tag">हमारे बारे में</span>
+      <h2>About Gram Helpline</h2>
+      <p>Gram Helpline is a <strong>Digital India initiative</strong> that brings transparency and accountability to village-level governance. Designed for rural citizens, it provides a simple, accessible platform for registering local issues and tracking resolutions — all in one place.</p>
+      <p>Our mission is to <strong>bridge the gap</strong> between villagers and Gram Panchayat authorities through technology, ensuring every complaint reaches the right desk and gets resolved on time.</p>
+      <div class="about-feats">
+        <div class="about-feat"><i class="fas fa-shield-alt"></i><span>Secure &amp; Transparent</span></div>
+        <div class="about-feat"><i class="fas fa-mobile-alt"></i><span>Mobile Friendly</span></div>
+        <div class="about-feat"><i class="fas fa-language"></i><span>Available in Hindi</span></div>
+        <div class="about-feat"><i class="fas fa-clock"></i><span>24/7 Access</span></div>
+      </div>
+      <div class="about-stats-row">
+        <div class="about-stat"><strong>12K+</strong><span>Villages</span></div>
+        <div class="about-stat"><strong>85K+</strong><span>Resolved</span></div>
+        <div class="about-stat"><strong>2.5L+</strong><span>Users</span></div>
+        <div class="about-stat"><strong>28</strong><span>States</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+  <div class="section-header">
+    <span class="section-tag">संपर्क करें</span>
+    <h2>Contact Support</h2>
+    <p>Reach out to us for help, queries, or technical support</p>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-card">
+      <div class="contact-icon phone-icon"><i class="fas fa-phone-alt"></i></div>
+      <h3>Helpline Number</h3>
+      <p>Toll-Free: <strong>1800-111-0123</strong></p>
+      <p>Available Mon–Sat, 9AM–6PM</p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-icon email-icon"><i class="fas fa-envelope"></i></div>
+      <h3>Email Support
